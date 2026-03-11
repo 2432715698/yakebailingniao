@@ -3,81 +3,350 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>牙科百灵鸟 - 免费科普</title>
+<title>牙科百灵鸟 - 全量口腔科普</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto}
-:root{--green:#22C58A;--light:#F0FDF4}
-body{background:var(--light);color:#1F2937}
+:root{--green:#22C58A;--dark:#1F2937;--light:#F0FDF4}
+body{background:var(--light);color:var(--dark)}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
 
-header{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,0.05);position:sticky;top:0;z-index:99}
-.nav{display:flex;justify-content:space-between;align-items:center;height:70px}
-.logo{font-size:24px;font-weight:700;color:var(--green)}
-.banner{background:linear-gradient(135deg,#22C58A,#4ADE80);color:#fff;padding:60px 20px;text-align:center}
-.banner h1{font-size:30px;margin-bottom:8px}
-.banner p{font-size:16px;opacity:0.95}
+header{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:sticky;top:0;z-index:99}
+.logo{font-size:24px;font-weight:700;color:var(--green);padding:18px 0}
 
-.section{padding:50px 0}
-.title{text-align:center;font-size:24px;font-weight:600;margin-bottom:30px}
+.banner{background:linear-gradient(135deg,#22C58A,#4ADE80);color:#fff;padding:50px 20px;text-align:center}
+.banner h1{font-size:28px;margin-bottom:10px}
+.banner p{font-size:16px;opacity:.95}
+
+.section{padding:45px 0}
+.title{text-align:center;font-size:22px;font-weight:600;margin-bottom:35px}
 .title span{color:var(--green)}
 
-.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.05);margin-bottom:24px;transition:0.3s}
-.card:hover{transform:translateY(-4px)}
-.card img{width:100%;height:200px;object-fit:cover}
-.card .c{padding:22px 24px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.05);transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card .c{padding:20px}
 .card h3{color:var(--green);font-size:18px;margin-bottom:8px}
 .card p{color:#4B5563;line-height:1.7}
 
-.footer{background:#1F2937;color:#fff;text-align:center;padding:40px 20px;font-size:14px}
+.item{background:#fff;border-radius:16px;padding:20px;margin-bottom:16px;box-shadow:0 3px 12px rgba(0,0,0,.04)}
+.item h3{color:var(--green);margin-bottom:8px}
 
-@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-.card{animation:up 0.6s ease backwards}
-.card:nth-child(1){animation-delay:0.1s}
-.card:nth-child(2){animation-delay:0.2s}
-.card:nth-child(3){animation-delay:0.3s}
+@keyframes up{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+.card{animation:up .6s ease backwards}
+.card:nth-child(1){animation-delay:.1s}
+.card:nth-child(2){animation-delay:.15s}
+.card:nth-child(3){animation-delay:.2s}
+
+.footer{background:#1F2937;color:#fff;text-align:center;padding:35px 20px;font-size:14px}
 </style>
 </head>
 
 <body>
+
 <header>
-  <div class="container nav">
-    <div class="logo">🦷 牙科百灵鸟 · 科普</div>
+  <div class="container">
+    <div class="logo">🦷 牙科百灵鸟 · 全量科普</div>
   </div>
 </header>
 
 <div class="banner">
-  <h1>免费牙齿科普 · 纯公益</h1>
-  <p>不收费 · 不推销 · 只为普及科学护牙</p>
+  <h1>全链路口腔医学科普库</h1>
+  <p>免费 · 全面 · 专业 · 无广告 · 不推销</p>
 </div>
 
+<!-- 一、牙齿基础结构 -->
 <div class="section container">
-  <div class="title">🦷 <span>牙齿基础知识</span></div>
+  <div class="title">🦷 <span>牙齿基础结构与解剖</span></div>
+  <div class="cards">
 
-  <div class="card">
-    <img src="https://picsum.photos/id/669/800/400">
-    <div class="c">
-      <h3>蛀牙是怎么形成的</h3>
-      <p>蛀牙是细菌利用食物产生酸，长期腐蚀牙齿形成。早补简单便宜，拖久会疼、需根管治疗。</p>
+    <div class="card">
+      <img src="https://picsum.photos/id/177/800/400">
+      <div class="c">
+        <h3>牙齿由什么组成</h3>
+        <p>牙冠、牙颈、牙根包含牙釉质、牙本质、牙骨质、牙髓。釉质是人体最硬组织。</p>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://picsum.photos/id/583/800/400">
-    <div class="c">
-      <h3>牙龈出血多为牙周问题</h3>
-      <p>刷牙出血大多不是上火，而是牙结石、牙周炎，需要清洁维护，不是靠吃药降火。</p>
+    <div class="card">
+      <img src="https://picsum.photos/id/116/800/400">
+      <div class="c">
+        <h3>恒牙与乳牙</h3>
+        <p>乳牙共20颗，恒牙28～32颗（含智齿）。换牙期一般6～12岁。</p>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://picsum.photos/id/162/800/400">
-    <div class="c">
-      <h3>智齿要不要拔</h3>
-      <p>发炎、疼痛、塞牙、顶坏邻牙建议拔掉；位置正常、无不适可保留。</p>
+    <div class="card">
+      <img src="https://picsum.photos/id/237/800/400">
+      <div class="c">
+        <h3>四大家族牙齿功能</h3>
+        <p>切牙切割、尖牙撕裂、双尖牙捣碎、磨牙研磨。</p>
+      </div>
     </div>
+
   </div>
 </div>
 
-<div class="footer">© 2026 牙科百灵鸟 公益科普版</div>
-</body>
-</html>
+<!-- 二、蛀牙与牙体疾病 -->
+<div class="section container">
+  <div class="title">🦷 <span>蛀牙 & 牙体疾病</span></div>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/id/669/800/400">
+      <div class="c">
+        <h3>蛀牙如何形成</h3>
+        <p>牙菌斑细菌分解糖分产生酸→长期脱矿→龋洞。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/583/800/400">
+      <div class="c">
+        <h3>浅龋、中龋、深龋</h3>
+        <p>浅补最快，深龋近牙髓，可能需要安抚、根管。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1071/800/400">
+      <div class="c">
+        <h3>牙齿敏感怎么办</h3>
+        <p>牙本质暴露、磨损、楔状缺损→脱敏剂、牙膏、修复。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1074/800/400">
+      <div class="c">
+        <h3>牙隐裂</h3>
+        <p>咬合硬物导致裂纹，可引起牙痛→根管、冠修复。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 三、牙周病（牙龈问题） -->
+<div class="section container">
+  <div class="title">🦷 <span>牙周健康（牙龈炎、牙周炎）</span></div>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/id/582/800/400">
+      <div class="c">
+        <h3>牙龈出血不是上火</h3>
+        <p>90%是牙结石、牙菌斑导致牙周炎。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/162/800/400">
+      <div class="c">
+        <h3>牙龈红肿、流脓</h3>
+        <p>重度牙周炎可导致牙齿松动。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1048/800/400">
+      <div class="c">
+        <h3>洗牙为什么必须做</h3>
+        <p>去除牙结石，预防牙周炎、口臭、牙龈萎缩。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/684/800/400">
+      <div class="c">
+        <h3>牙周翻瓣手术</h3>
+        <p>重度牙周炎需深度清洁、 flap 手术控制炎症。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 四、智齿 -->
+<div class="section container">
+  <div class="title">🦷 <span>智齿与阻生牙</span></div>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1062/800/400">
+      <div class="c">
+        <h3>智齿要不要拔</h3>
+        <p>发炎、顶牙、塞牙、影响正畸建议拔。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1066/800/400">
+      <div class="c">
+        <h3>阻生智齿风险</h3>
+        <p>邻牙吸收、囊肿、冠周炎、疼痛。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1071/800/400">
+      <div class="c">
+        <h3>拔牙流程</h3>
+        <p>麻醉 → 拔牙 → 止血 → 观察，不复杂。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 五、正畸（矫正） -->
+<div class="section container">
+  <div class="title">🦷 <span>牙齿矫正（正畸）</span></div>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1060/800/400">
+      <div class="c">
+        <h3>儿童正畸最佳年龄</h3>
+        <p>10～14岁矫正效果最好、时间短。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1069/800/400">
+      <div class="c">
+        <h3>成人矫正可以吗</h3>
+        <p>可以，但需控制牙周状况，周期略长。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1074/800/400">
+      <div class="c">
+        <h3>隐形牙套 vs 钢丝牙套</h3>
+        <p>隐形美观、价格高；钢丝效率高、价格低。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 六、种植 -->
+<div class="section container">
+  <div class="title">🦷 <span>种植牙（缺牙修复）</span></div>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1062/800/400">
+      <div class="c">
+        <h3>种植牙原理</h3>
+        <p>钛合金植体 → 骨结合 → 装牙冠，最接近真牙。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1066/800/400">
+      <div class="c">
+        <h3>种植条件</h3>
+        <p>骨量足够、健康牙周、无严重慢性病。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1071/800/400">
+      <div class="c">
+        <h3>种植失败原因</h3>
+        <p>感染、骨结合不足、咬合力过大、未维护。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 七、义齿与修复 -->
+<div class="section container">
+  <div class="title">🦷 <span>义齿、烤瓷牙、全瓷牙</span></div>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1060/800/400">
+      <div class="c">
+        <h3>全瓷牙优势</h3>
+        <p>美观、生物相容性好、不影响核磁。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1069/800/400">
+      <div class="c">
+        <h3>活动假牙</h3>
+        <p>便宜、适配多数缺牙人群但舒适度一般。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1074/800/400">
+      <div class="c">
+        <h3>贴面美白</h3>
+        <p>薄瓷片贴附改善颜色、形态。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 八、儿童口腔 -->
+<div class="section container">
+  <div class="title">👶 <span>儿童口腔健康</span></div>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/id/177/800/400">
+      <div class="c">
+        <h3>奶瓶龋</h3>
+        <p>含奶瓶睡觉易导致严重乳牙龋。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/116/800/400">
+      <div class="c">
+        <h3>涂氟 & 窝沟封闭</h3>
+        <p>儿童防蛀最有效手段。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/225/800/400">
+      <div class="c">
+        <h3>儿童刷牙方法</h3>
+        <p>家长辅助，巴氏刷牙法，2分钟以上。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 九、口臭与口腔清洁 -->
+<div class="section container">
+  <div class="title">🧼 <span>口臭、口腔清洁</span></div>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1071/800/400">
+      <div class="c">
+        <h3>80%口臭来自口腔</h3>
+        <p>舌苔、牙结石、牙周病最常见。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/id/1062/800/400">
+      <div class="c">
+        <h3>正确刷牙</h3>
+        <p>巴氏刷牙法 45°轻振，避免横刷。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://
