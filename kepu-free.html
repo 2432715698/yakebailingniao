@@ -3,166 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>牙科百灵鸟 - 免费牙齿科普</title>
+<title>牙科百灵鸟 - 免费科普</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Microsoft YaHei,sans-serif}
-:root{--main:#4A90E2;--green:#61D2B4;--dark:#333;--light:#f8f9fa;--gray:#666}
-body{color:var(--dark);line-height:1.7;background:#f9f9f9}
-.container{width:92%;max-width:1100px;margin:0 auto}
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto}
+:root{--green:#22C58A;--light:#F0FDF4}
+body{background:var(--light);color:#1F2937}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
 
-header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:999}
+header{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,0.05);position:sticky;top:0;z-index:99}
 .nav{display:flex;justify-content:space-between;align-items:center;height:70px}
-.logo{font-size:26px;font-weight:700;color:var(--main)}
-.nav-menu{display:flex;list-style:none;gap:28px}
-.nav-menu a{font-weight:500;color:#333;text-decoration:none;font-size:15px}
-.nav-menu a:hover{color:var(--main)}
+.logo{font-size:24px;font-weight:700;color:var(--green)}
+.banner{background:linear-gradient(135deg,#22C58A,#4ADE80);color:#fff;padding:60px 20px;text-align:center}
+.banner h1{font-size:30px;margin-bottom:8px}
+.banner p{font-size:16px;opacity:0.95}
 
-.banner{background:linear-gradient(135deg,#4A90E2,#50C9C3);color:#fff;padding:70px 0;text-align:center}
-.banner h1{font-size:36px;margin-bottom:12px}
-.banner p{font-size:17px;max-width:700px;margin:0 auto;opacity:.95}
+.section{padding:50px 0}
+.title{text-align:center;font-size:24px;font-weight:600;margin-bottom:30px}
+.title span{color:var(--green)}
 
-.section{padding:55px 0}
-.title{text-align:center;font-size:28px;margin-bottom:40px;color:#222}
-.title span{color:var(--main)}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.05);margin-bottom:24px;transition:0.3s}
+.card:hover{transform:translateY(-4px)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card .c{padding:22px 24px}
+.card h3{color:var(--green);font-size:18px;margin-bottom:8px}
+.card p{color:#4B5563;line-height:1.7}
 
-.kuai{background:#fff;border-radius:16px;box-shadow:0 3px 15px rgba(0,0,0,.05);padding:25px;margin-bottom:20px}
-.kuai h3{font-size:19px;color:var(--main);margin-bottom:8px}
-.kuai p{color:#555;line-height:1.8}
+.footer{background:#1F2937;color:#fff;text-align:center;padding:40px 20px;font-size:14px}
 
-.footer{background:#222;color:#fff;padding:50px 20px 30px;text-align:center}
-.footer p{color:#ccc;margin-bottom:10px}
-.copyright{color:#888;margin-top:25px;font-size:14px}
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.card{animation:up 0.6s ease backwards}
+.card:nth-child(1){animation-delay:0.1s}
+.card:nth-child(2){animation-delay:0.2s}
+.card:nth-child(3){animation-delay:0.3s}
 </style>
 </head>
 
 <body>
-
 <header>
-<div class="container nav">
-<div class="logo">牙科百灵鸟</div>
-<ul class="nav-menu">
-<li><a href="#home">首页</a></li>
-<li><a href="#zhishi">牙齿科普</a></li>
-<li><a href="#huli">日常护牙</a></li>
-<li><a href="#ertong">儿童牙齿</a></li>
-</ul>
-</div>
+  <div class="container nav">
+    <div class="logo">🦷 牙科百灵鸟 · 科普</div>
+  </div>
 </header>
 
-<section class="banner" id="home">
-<div class="container">
-<h1>牙科百灵鸟 · 免费牙齿科普</h1>
-<p>纯公益科普 | 科学护牙 | 不收费、不推销、不套路</p>
-</div>
-</section>
-
-<section class="section" id="zhishi">
-<div class="container">
-<h2 class="title">🦷 <span>常见牙齿知识</span></h2>
-
-<div class="kuai">
-<h3>🦷 蛀牙是怎么形成的？</h3>
-<p>蛀牙是口腔细菌利用食物残渣产生酸性物质，长期腐蚀牙齿，形成小洞。越早补越简单、越便宜、越不疼。</p>
+<div class="banner">
+  <h1>免费牙齿科普 · 纯公益</h1>
+  <p>不收费 · 不推销 · 只为普及科学护牙</p>
 </div>
 
-<div class="kuai">
-<h3>🦷 牙龈出血不是上火</h3>
-<p>绝大多数牙龈出血是牙结石、牙周病引起，不是上火。洗牙+正确刷牙就能明显改善。</p>
+<div class="section container">
+  <div class="title">🦷 <span>牙齿基础知识</span></div>
+
+  <div class="card">
+    <img src="https://picsum.photos/id/669/800/400">
+    <div class="c">
+      <h3>蛀牙是怎么形成的</h3>
+      <p>蛀牙是细菌利用食物产生酸，长期腐蚀牙齿形成。早补简单便宜，拖久会疼、需根管治疗。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/id/583/800/400">
+    <div class="c">
+      <h3>牙龈出血多为牙周问题</h3>
+      <p>刷牙出血大多不是上火，而是牙结石、牙周炎，需要清洁维护，不是靠吃药降火。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/id/162/800/400">
+    <div class="c">
+      <h3>智齿要不要拔</h3>
+      <p>发炎、疼痛、塞牙、顶坏邻牙建议拔掉；位置正常、无不适可保留。</p>
+    </div>
+  </div>
 </div>
 
-<div class="kuai">
-<h3>🦷 智齿到底要不要拔？</h3>
-<p>反复发炎、疼痛、塞牙、顶坏邻牙、影响矫正，这几种情况建议拔掉。没有异常可以保留。</p>
-</div>
-
-<div class="kuai">
-<h3>🦷 洗牙会不会伤牙？</h3>
-<p>洗牙不会伤害牙齿，只会清除牙结石、牙菌斑。真正伤牙的是牙结石，不是洗牙。</p>
-</div>
-
-<div class="kuai">
-<h3>🦷 口臭大多来自口腔</h3>
-<p>80%以上的口臭是口腔问题：舌苔厚、牙结石、蛀牙、牙周炎。做好清洁就能改善。</p>
-</div>
-
-</div>
-</section>
-
-<section class="section" id="huli" style="background:#f1f7ff">
-<div class="container">
-<h2 class="title">🧼 <span>日常护牙方法</span></h2>
-
-<div class="kuai">
-<h3>✅ 正确刷牙：巴氏刷牙法</h3>
-<p>牙刷45度朝向牙龈，轻轻颤动，每次刷够2-3分钟，早晚各一次。</p>
-</div>
-
-<div class="kuai">
-<h3>✅ 一定要用牙线</h3>
-<p>牙刷刷不到牙缝，牙线能清理食物残渣，预防蛀牙和牙周炎。</p>
-</div>
-
-<div class="kuai">
-<h3>✅ 含氟牙膏最安全有效</h3>
-<p>氟化物能强化牙齿，预防蛀牙，成人儿童都可以用。</p>
-</div>
-
-<div class="kuai">
-<h3>✅ 少吃甜食、少喝饮料</h3>
-<p>糖和碳酸饮料是牙齿杀手，吃完喝完一定要漱口。</p>
-</div>
-
-</div>
-</section>
-
-<section class="section" id="ertong">
-<div class="container">
-<h2 class="title">👶 <span>儿童牙齿护理</span></h2>
-
-<div class="kuai">
-<h3>👶 宝宝长牙顺序</h3>
-<p>一般6个月开始长牙，2-3岁长齐20颗乳牙，换牙期从6岁开始。</p>
-</div>
-
-<div class="kuai">
-<h3>👶 奶瓶龋要预防</h3>
-<p>不要让宝宝含着奶瓶睡觉，喝完奶要漱口或清洁口腔。</p>
-</div>
-
-<div class="kuai">
-<h3>👶 涂氟和窝沟封闭</h3>
-<p>儿童建议定期涂氟，恒牙长出后做窝沟封闭，能有效防蛀。</p>
-</div>
-
-<div class="kuai">
-<h3>👶 乳牙坏了也要治</h3>
-<p>乳牙坏了会影响恒牙发育、发音、脸型，一定要及时治疗。</p>
-</div>
-
-</div>
-</section>
-
-<section class="section" style="background:#f1f7ff">
-<div class="container">
-<h2 class="title">ℹ️ <span>科普说明</span></h2>
-<div class="kuai">
-<p style="font-size:16px;line-height:2">
-本平台为**纯公益免费牙齿科普**，
-不收费、不推销、不引流、不做医疗广告。
-内容仅为科普知识，不替代医生诊断。
-如有口腔不适，请到正规口腔机构就诊。
-</p>
-</div>
-</div>
-</section>
-
-<div class="footer">
-<div class="container">
-<p>牙科百灵鸟 - 免费牙齿科普平台</p>
-<p>让每个人都能学会科学护牙</p>
-<div class="copyright">© 2026 牙科百灵鸟 纯公益版</div>
-</div>
-</div>
-
+<div class="footer">© 2026 牙科百灵鸟 公益科普版</div>
 </body>
 </html>
