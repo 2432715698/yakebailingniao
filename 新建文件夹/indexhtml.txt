@@ -91,7 +91,7 @@ footer{background:#222;color:#fff;padding:40px 20px;text-align:center}
 <div class="pay-wx" id="pay">
 <h3>微信扫码付款</h3>
 <img src="https://picsum.photos/300/300" alt="微信收款码">
-<p>付款后添加微信：你的微信号</p>
+<p>付款后添加微信：YKBLN9527</p>
 <p>发送付款截图 + 你的问题</p>
 <p>医生将在24小时内为你解答</p>
 </div>
